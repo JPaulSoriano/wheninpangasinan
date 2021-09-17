@@ -9,7 +9,7 @@ class PublicController extends Controller
 {
     public function index()
     {
-        $latestposts = Post::where('featured', '=', '0')->limit(3)->get();
+        $latestposts = Post::where('featured', '=', '0')->limit(3)->get()->sortDesc();
         $featuredposts = Post::where('featured', '=', '1')->limit(3)->get();
         $categories = Category::all();
         $moreposts = Post::inRandomOrder()->limit(10)->get();
