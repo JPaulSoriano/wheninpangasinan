@@ -70,6 +70,9 @@
                                     @else
                                     @endif
                                 @endforeach
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ route('allposts') }}">All Posts</a>
+                                        </li>
                             
                         @else
                                 <li class="nav-item">

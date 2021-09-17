@@ -95,7 +95,7 @@ class PostController extends Controller
 
     public function allposts()
     {
-        $allposts = Post::orderBy('created_at', 'asc')->get();
+        $allposts = Post::orderBy('created_at', 'desc')->get();
         return view('posts.allposts',compact('allposts'))
         ->with('i', (request()->input('page', 1) - 1) * 5);
     }
