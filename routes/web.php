@@ -25,6 +25,7 @@ Route::get('/addmenu/{category}',  [CategoryController::class, 'addmenu'])->name
 Route::delete('/unfeature/{post}',  [PostController::class, 'unfeature'])->name('unfeature');
 Route::get('/feature/{post}',  [PostController::class, 'feature'])->name('feature');
 Route::get('/categorizedpost/{category}', [PostController::class, 'categorizedpost'])->name('categorizedpost');
+Route::get('/allposts', [PostController::class, 'allposts'])->name('allposts');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('posts', PostController::class);
 Route::get('/adminhome', [App\Http\Controllers\HomeController::class, 'adminhome'])->name('adminhome');

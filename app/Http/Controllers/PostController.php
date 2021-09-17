@@ -93,6 +93,13 @@ class PostController extends Controller
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
+    public function allposts()
+    {
+        $allposts = Post::orderBy('created_at', 'asc')->get();
+        return view('posts.allposts',compact('allposts'))
+        ->with('i', (request()->input('page', 1) - 1) * 5);
+    }
+
 
     public function unfeature(Post $post)
     {
