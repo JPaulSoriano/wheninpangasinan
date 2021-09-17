@@ -10,7 +10,7 @@ class PostController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('is_admin')->except('show', 'categorizedpost');
+        $this->middleware('is_admin')->except('show', 'categorizedpost', 'allposts');
     }
 
     public function index()
