@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use App\Models\Category;
 use App\Models\Link;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -27,11 +28,17 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        $cat = [];
+        $link = [];
+        
+        if(Schema::hasTable('categories')){
+            $cat = Category::all();
+        }
+        if(Schema::hasTable('links')){
+            $link = Link::all();
+        }
 
-        // $cat = Category::all();
-        // View::share('categories', $cat);
-
-        // $link = Link::all();
-        // View::share('links', $link);
+        View::share('categories', $cat);
+        View::share('links', $link);
     }
 }
