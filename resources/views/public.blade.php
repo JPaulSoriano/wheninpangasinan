@@ -3,10 +3,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-2" style="display: flex; justify-content: center; align-items: center;">
-            <p class="my-5">Place your ADS here.</p></br>
-            <p class="my-5">Place your ADS here.</p></br>
-            <p class="my-5">Place your ADS here.</p>
+        <div class="col-lg-2">
         </div>
         <div class="col-lg-6">
             <div class="row mb-5">
@@ -95,9 +92,7 @@
                 <hr>
             @endforeach
         </div>
-        <div class="col-lg-2" style="display: flex; justify-content: center; align-items: center;">
-            <p class="my-5">Place your ADS here.</p></br>
-            <p class="my-5">Place your ADS here.</p></br>
+        <div class="col-lg-2">
             <p class="my-5">Place your ADS here.</p>
         </div>
     </div>
