@@ -4,8 +4,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-2" style="display: flex; justify-content: center; align-items: center;">
-            <p class="my-5">Place your ADS here.</p>
-            <p class="my-5">Place your ADS here.</p>
+            <p class="my-5">Place your ADS here.</p></br>
+            <p class="my-5">Place your ADS here.</p></br>
             <p class="my-5">Place your ADS here.</p>
         </div>
         <div class="col-lg-6">
@@ -96,8 +96,8 @@
             @endforeach
         </div>
         <div class="col-lg-2" style="display: flex; justify-content: center; align-items: center;">
-            <p class="my-5">Place your ADS here.</p>
-            <p class="my-5">Place your ADS here.</p>
+            <p class="my-5">Place your ADS here.</p></br>
+            <p class="my-5">Place your ADS here.</p></br>
             <p class="my-5">Place your ADS here.</p>
         </div>
     </div>
