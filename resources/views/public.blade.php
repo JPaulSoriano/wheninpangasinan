@@ -53,7 +53,7 @@
                     <img src="/image/{{ $post->image }}" class="card-img-top img-fluid" style="height:20vh">
                     <div class="card-body">
                         <div class="small text-muted">{{ $post->created_at->format('Y-m-d') }}</div>
-                        <p class="card-title fs-6 font-weight-bold">{{ $post->title }}</p>
+                        <p class="card-title fs-6 font-weight-bold text-truncate">{{ $post->title }}</p>
                         <a class="btn btn-primary btn-sm" href="{{ route('posts.show',$post->id) }}">Read more →</a>
                     </div>
                     </div>
