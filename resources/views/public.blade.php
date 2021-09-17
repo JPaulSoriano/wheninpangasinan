@@ -1,9 +1,12 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-2" style="display: flex; justify-content: center; align-items: center;">
+            <p>Place your ADS here.</p>
+        </div>
+        <div class="col-lg-6">
             <div class="row mb-5">
                 <div class="col-lg-12">
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -61,7 +64,7 @@
                 @endforeach
             </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-2">
             <div class="card mb-4">
                 <div class="card-header bg-primary text-white">Categories</div>
                 <div class="card-body">
@@ -89,6 +92,9 @@
 
                 <hr>
             @endforeach
+        </div>
+        <div class="col-lg-2" style="display: flex; justify-content: center; align-items: center;">
+            <p>Place your ADS here.</p>
         </div>
     </div>
 </div>
